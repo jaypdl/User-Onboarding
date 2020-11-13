@@ -9,6 +9,6 @@ export default yup.object().shape({
     .required('Password required')
     .min(3, 'Pass must be at least 4 chars'),
   tos: yup.boolean()
-    .required('I require your soul'),
-  
+    .required('I require your soul')
+    .oneOf([true]),
 })
